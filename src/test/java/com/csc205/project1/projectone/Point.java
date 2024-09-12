@@ -31,7 +31,7 @@ public class Point {
     public void shiftY(double n) {
         this.y += n;
     }
-    public double distance(com.csc205.project1.Point p2) {
+    public double distance(Point p2) {
         return Math.sqrt(Math.pow(p2.getX() - this.x, 2) + Math.pow(p2.getY() - this.y, 2));
     }
     public void rotate(double angle) {
@@ -43,8 +43,6 @@ public class Point {
     public String toString() {
         return "Point(" + "x=" + x + ", y=" + y + ')';
     }
-
-
 
 
 
